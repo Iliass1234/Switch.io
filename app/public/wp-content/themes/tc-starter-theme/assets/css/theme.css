@@ -1,0 +1,21 @@
+.tcFooterLogo {
+  height: 48px;
+}
+
+.tcFooterInfo {
+  border-top: 1px solid #1D1D1B;
+  border-bottom: 1px solid #1D1D1B;
+}
+
+.tcFooterInfoBorder {
+  border-right: 1px solid #1D1D1B;
+  border-left: 1px solid #1D1D1B;
+}
+
+.offcanvas {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal.fade {
+  transition: opacity 0.15s linear;
+}

@@ -1,0 +1,40 @@
+.accordion {
+  --bs-accordion-border-color: none;
+  .collapsed{
+    color: $black;
+    background-color: white!important;
+  }
+  .tcServizioDescrizioneBg{
+    background-color: $secondary!important;
+  }
+  .tcDescrizioneServizio{
+    max-width: 420px;
+  }
+  .accordion-button:hover {
+    background-color: $secondary;
+  }
+  .tcBgServiziTitle{
+    background-color: $secondary!important;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: white!important;
+    color: $black
+  }
+  .accordion-button{
+    border-bottom: 1px solid $black;
+  }
+  .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .tcServiziScopriDiPiu{
+    border-bottom: 1px solid $black;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+}
+.tcServiziIcona{
+  max-height: 45px;
+  max-width: 45px;
+}

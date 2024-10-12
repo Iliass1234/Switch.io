@@ -1,0 +1,13 @@
+@import "../defaults/variables";
+
+.tcFooterLogo{
+  height: 48px;
+}
+.tcFooterInfo{
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+}
+.tcFooterInfoBorder{
+  border-right: 1px solid $black;
+  border-left: 1px solid $black;
+}

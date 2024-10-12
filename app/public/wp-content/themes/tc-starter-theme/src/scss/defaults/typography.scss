@@ -1,0 +1,71 @@
+//1. Non assegnare i colori ai selettori tag (h1,h2,h3, a, p etc etc)
+
+//2. Non modificare i font size dei selettori tag (h1,h2,h3,h4 etc etc) --> utilizzare classi display di bootstrap e
+// (SOLO se necessario) modificarne i font size nelle variabili sezione typography
+
+//3. Le classi text-primary, text-secondary etc etc sono già state create da Bootstrap. Non devi rifarle
+
+@for $index from 1 to 6 {
+  h#{$index}, .h#{$index} {
+
+  }
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWave-Bold.woff2') format('woff2'),
+  url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWave-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave';
+  src: url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWave-Regular.woff2') format('woff2'),
+  url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWave-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave Alt';
+  src: url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Regular.woff2') format('woff2'),
+  url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave Alt';
+  src: url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Medium.woff2') format('woff2'),
+  url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LT Wave Alt';
+  src: url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Bold.woff2') format('woff2'),
+  url('/wp-content/themes/tc-starter-theme/assets/fonts/LTWaveAlt-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+

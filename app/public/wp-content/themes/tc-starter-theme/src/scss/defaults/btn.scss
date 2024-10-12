@@ -1,0 +1,97 @@
+@import "../defaults/variables";
+
+.btn {
+  text-transform: uppercase;
+  font-size: 14px !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}
+
+.btn-sm {
+  padding: 0.25rem 1.25rem;
+
+}
+
+.btn-lg {
+  padding: 0.75rem 1.75rem;
+
+}
+
+.btn:active {
+  border-color: transparent !important;
+}
+.tc-btn-lg-arrow-info{
+  position: relative;
+  margin-right: 46px;
+  display: flex;
+  align-items: center;
+  &::after{
+    position: absolute;
+    content: url('/wp-content/themes/tc-starter-theme/assets/images/svg/buttom-grey.svg');
+    height: 46px;
+    right:-46px ;
+  }
+}
+
+.tc-btn-arrow-info{
+  position: relative;
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+  &::after{
+    position: absolute;
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzknIGhlaWdodD0nMzknIHZpZXdCb3g9JzAgMCA0NiA0NicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZyBjbGlwLXBhdGg9J3VybCgjY2xpcDBfMjcyXzIpJz48cGF0aCBkPSdNNDYgMjNDNDYgMTAuMjk3NSAzNS43MDI1IDAgMjMgMEMxMC4yOTc1IDAgMCAxMC4yOTc1IDAgMjNDMCAzNS43MDI1IDEwLjI5NzUgNDYgMjMgNDZDMzUuNzAyNSA0NiA0NiAzNS43MDI1IDQ2IDIzWicgZmlsbD0nI0Q5RDlEOScvPjxwYXRoIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMjkuOSAxNS42MDAxSDE0LjcyVjE2LjYwMDFIMjguNzQ0N0wxNS4yODY1IDMwLjA1ODRMMTUuOTkzNiAzMC43NjU1TDI5LjQgMTcuMzU5VjMxLjI4MDFIMzAuNFYxNi4xMDAxVjE1LjYwMDFIMjkuOVonIGZpbGw9JyMxNDE0MTQnLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSdjbGlwMF8yNzJfMic+PHJlY3Qgd2lkdGg9JzQ2JyBoZWlnaHQ9JzQ2JyBmaWxsPSd3aGl0ZScvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPgo=");
+    height:39px ;
+    right: -39px;
+  }
+}
+.tc-btn-sm-arrow-info{
+  position: relative;
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+  &::before{
+    position: absolute;
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzEnIGhlaWdodD0nMzEnIHZpZXdCb3g9JzAgMCA0NiA0NicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZyBjbGlwLXBhdGg9J3VybCgjY2xpcDBfMjcyXzIpJz48cGF0aCBkPSdNNDYgMjNDNDYgMTAuMjk3NSAzNS43MDI1IDAgMjMgMEMxMC4yOTc1IDAgMCAxMC4yOTc1IDAgMjNDMCAzNS43MDI1IDEwLjI5NzUgNDYgMjMgNDZDMzUuNzAyNSA0NiA0NiAzNS43MDI1IDQ2IDIzWicgZmlsbD0nI0Q5RDlEOScvPjxwYXRoIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMjkuOSAxNS42MDAxSDE0LjcyVjE2LjYwMDFIMjguNzQ0N0wxNS4yODY1IDMwLjA1ODRMMTUuOTkzNiAzMC43NjU1TDI5LjQgMTcuMzU5VjMxLjI4MDFIMzAuNFYxNi4xMDAxVjE1LjYwMDFIMjkuOVonIGZpbGw9JyMxNDE0MTQnLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSdjbGlwMF8yNzJfMic+PHJlY3Qgd2lkdGg9JzQ2JyBoZWlnaHQ9JzQ2JyBmaWxsPSd3aGl0ZScvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPgo=");    width: 31px;
+    height: 31px;
+    right:-31px ;
+  }
+}
+
+
+
+
+.tc-btn-lg-arrow-dark{
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::after{
+    position: absolute;
+    content: url('/wp-content/themes/tc-starter-theme/assets/images/svg/buttom-black.svg');
+    height: 46px;
+    right:-46px ;
+  }
+}
+.tc-btn-arrow-dark{
+  position: relative;
+  margin-right: 39px;
+  display: flex;
+  align-items: center;
+  &::after{
+    position: absolute;
+    right: -39px;
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzknIGhlaWdodD0nMzknIHZpZXdCb3g9JzAgMCA0NiA0NycgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cmVjdCB5PScwLjI0MDIzNCcgd2lkdGg9JzQ2JyBoZWlnaHQ9JzQ2JyByeD0nMjMnIGZpbGw9JyMxNDE0MTQnLz48cGF0aCBmaWxsLXJ1bGU9J2V2ZW5vZGQnIGNsaXAtcnVsZT0nZXZlbm9kZCcgZD0nTTI5LjkgMTUuODQwM0gxNC43MlYxNi44NDAzSDI4Ljc0NDdMMTUuMjg2NSAzMC4yOTg2TDE1Ljk5MzYgMzEuMDA1N0wyOS40IDE3LjU5OTNWMzEuNTIwM0gzMC40VjE2LjM0MDNWMTUuODQwM0gyOS45WicgZmlsbD0nd2hpdGUnLz48L3N2Zz4g");
+    height:39px ;
+  }
+}
+.tc-btn-sm-arrow-dark{
+  position: relative;
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+  &::before{
+    position: absolute;
+    content:  url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzEnIGhlaWdodD0nMzEnIHZpZXdCb3g9JzAgMCA0NiA0NycgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cmVjdCB5PScwLjI0MDIzNCcgd2lkdGg9JzQ2JyBoZWlnaHQ9JzQ2JyByeD0nMjMnIGZpbGw9JyMxNDE0MTQnLz48cGF0aCBmaWxsLXJ1bGU9J2V2ZW5vZGQnIGNsaXAtcnVsZT0nZXZlbm9kZCcgZD0nTTI5LjkgMTUuODQwM0gxNC43MlYxNi44NDAzSDI4Ljc0NDdMMTUuMjg2NSAzMC4yOTg2TDE1Ljk5MzYgMzEuMDA1N0wyOS40IDE3LjU5OTNWMzEuNTIwM0gzMC40VjE2LjM0MDNWMTUuODQwM0gyOS45WicgZmlsbD0nd2hpdGUnLz48L3N2Zz4g");    right:-31px ;
+    height: 31px;
+  }
+}

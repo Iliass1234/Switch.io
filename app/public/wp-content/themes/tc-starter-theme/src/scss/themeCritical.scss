@@ -1,0 +1,35 @@
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//DEFAULTS
+
+@import "defaults/variables";
+@import "defaults/mixins";
+@import "defaults/btn";
+@import "defaults/layout";
+@import "defaults/typography";
+@import "defaults/admin-bar";
+@import "defaults/header";
+@import "defaults/form";
+@import "defaults/badge";
+
+@import "components/home/hero";
+@import "components/home/sezione-team";
+@import "components/home/progetti";
+@import "components/home/servizi";
+
+
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//COMPONENTS
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,65 @@
+.tcTestoAziandaTeam{
+  font-size: 32px!important;
+}
+
+.tcImgFondatore{
+  max-width:230px;
+}
+.tcTeamAnimationImg{
+  animation: rotate 9.6s ease-in-out infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10.42% {
+    transform: rotate(45deg);
+  }
+  20.84% {
+    transform: rotate(45deg);
+  }
+  31.26% {
+    transform: rotate(90deg);
+  }
+  41.68% {
+    transform: rotate(90deg);
+  }
+  52.10% {
+    transform: rotate(135deg);
+  }
+  62.52% {
+    transform: rotate(135deg);
+  }
+  72.94% {
+    transform: rotate(180deg);
+  }
+  83.36% {
+    transform: rotate(180deg);
+  }
+  93.78% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+.tcRuoloTeam{
+  font-size: 14px!important;
+}
+.tcImgSwiper{
+  position: static;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 239, 119);
+    mix-blend-mode: multiply;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+

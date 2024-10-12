@@ -1,0 +1,71 @@
+@import "../defaults/variables";
+.wpcf7-form p{
+  margin-bottom: 0!important;
+}
+
+.form-control {
+  border: 0 !important;
+  font-size: 1rem;
+  border-radius: 0 !important;
+
+}
+.tcBgInfo{
+  @media (min-width: 767px) {
+    background-color: $info;
+  }
+  background-color: rgb(239,240,238);
+}
+.tcFormEmail{
+  border: 0;
+  width: 100%;
+}
+.tcFormTel{
+  border: 0;
+  width: 100%;
+}
+  .tcBgForm{
+    @media (min-width: 767px) {
+      background-color: rgb(239,240,238);
+    }
+    background-color: $info;
+}
+
+
+
+.tcBgConsensoPp{
+  background-color:rgb(239,240,238) ;
+}
+
+.form-check-input {
+  background-color: $info;
+  border-radius: 0!important;
+  height:24px ;
+  width: 24px;
+  &:checked {
+    background-color: $primary !important;
+    border-radius: 0;
+
+  }
+}
+
+.form-check-input[type=radio] {
+  border-radius: 50% !important;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: $primary !important;
+}
+
+.wpcf7-spinner{
+ height: 0;
+  width: 0;
+  margin: 0;
+}

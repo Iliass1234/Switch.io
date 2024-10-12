@@ -1,0 +1,8 @@
+body.logged-in header, body.logged-in #tc-main-menu-offcanvas {
+  top: 32px;
+}
+@media screen and (max-width: 782px) {
+  body.logged-in header, body.logged-in #tc-main-menu-offcanvas {
+    top: 46px;
+  }
+}
