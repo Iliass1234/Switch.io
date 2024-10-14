@@ -1,21 +1,15 @@
-.tcHeroImg{
-  border-radius: 40px 40px 0 0 ;
-  @media (max-width: 767.5px) {
-   height: 670px;
-  }
-  @media (max-width: 320.5px) {
-    height: 720px;
-  }
+#hero{
+  //max-height: 1030px;
+}
+.tcHeroImg {
+  border-radius: 40px;
 }
 .tcLogoNegativo{
-  height: 100px;
   width: 390px;
   @media (min-width: 768px) {
-    height: 190px;
     width: 720px;
   }
   @media (min-width: 768px) and (max-width: 1024.5px) {
-    height: calc(190px * 0.7);
     width: calc(720px * 0.7);
   }
 }

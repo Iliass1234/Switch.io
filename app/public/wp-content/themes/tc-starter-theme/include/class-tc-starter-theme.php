@@ -316,7 +316,7 @@ if (!class_exists('tc\Theme\tcStarterTheme')) {
         protected function _custom_image_sizes()
         {
             add_image_size('full-thumb', 1920, 1080, true);
-            add_image_size('card-thumb', 400, 400, true);
+            add_image_size('card-thumb', 200, 200, true);
         }
 
 

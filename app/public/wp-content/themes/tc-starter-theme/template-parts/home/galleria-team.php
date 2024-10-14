@@ -11,13 +11,16 @@
                     <div class="h-100">
                         <div class="tcInfoTeam d-flex flex-column justify-content-between h-100  w-100">
                             <?php foreach ($value['tc_home_sezione_team_titolo'] as $index => $title) : ?>
-                            <div>
                                 <?php if ($index === 0) : ?>
-                                    <span ><?php echo $title; ?></span>
+                            <div>
+
+                                    <span class="d-block"><?php echo $title; ?></span>
                                 <?php elseif ($index === 1) : ?>
                                     <span class="tcRuoloTeam text-secondary"><?php echo $title; ?></span>
-                                <?php endif; ?>
+
                             </div>
+                                <?php endif; ?>
+
                             <?php endforeach; ?>
                             <div class="mt-2">
                                 <img class=" img-fluid tc-img-cover tcImgSwiper"

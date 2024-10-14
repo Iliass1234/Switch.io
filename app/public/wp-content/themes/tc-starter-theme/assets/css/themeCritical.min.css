@@ -366,32 +366,19 @@ input:-webkit-autofill {
 }
 
 .tcHeroImg {
-  border-radius: 40px 40px 0 0;
-}
-@media (max-width: 767.5px) {
-  .tcHeroImg {
-    height: 670px;
-  }
-}
-@media (max-width: 320.5px) {
-  .tcHeroImg {
-    height: 720px;
-  }
+  border-radius: 40px;
 }
 
 .tcLogoNegativo {
-  height: 100px;
   width: 390px;
 }
 @media (min-width: 768px) {
   .tcLogoNegativo {
-    height: 190px;
     width: 720px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024.5px) {
   .tcLogoNegativo {
-    height: 133px;
     width: 504px;
   }
 }
@@ -408,13 +395,23 @@ input:-webkit-autofill {
 .tcTestoAziandaTeam {
   font-size: 32px !important;
 }
+@media (max-width: 425.5px) {
+  .tcTestoAziandaTeam {
+    font-size: 24px !important;
+  }
+}
 
 .tcImgFondatore {
   max-width: 230px;
 }
+@media (max-width: 425.5px) {
+  .tcImgFondatore {
+    width: 150px;
+  }
+}
 
 .tcTeamAnimationImg {
-  animation: rotate 9.6s ease-in-out infinite;
+  animation: rotate 9s ease-in-out infinite;
 }
 
 @keyframes rotate {
@@ -422,34 +419,34 @@ input:-webkit-autofill {
     transform: rotate(0deg);
   }
   10.42% {
-    transform: rotate(45deg);
+    transform: rotate(72deg);
   }
   20.84% {
-    transform: rotate(45deg);
+    transform: rotate(72deg);
   }
   31.26% {
-    transform: rotate(90deg);
+    transform: rotate(144deg);
   }
   41.68% {
-    transform: rotate(90deg);
+    transform: rotate(144deg);
   }
   52.10% {
-    transform: rotate(135deg);
+    transform: rotate(216deg);
   }
   62.52% {
-    transform: rotate(135deg);
+    transform: rotate(216deg);
   }
   72.94% {
-    transform: rotate(180deg);
+    transform: rotate(288deg);
   }
   83.36% {
-    transform: rotate(180deg);
+    transform: rotate(288deg);
   }
   93.78% {
-    transform: rotate(225deg);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(225deg);
+    transform: rotate(360deg);
   }
 }
 .tcRuoloTeam {
@@ -471,6 +468,34 @@ input:-webkit-autofill {
   mix-blend-mode: multiply;
   z-index: 2;
   pointer-events: none;
+}
+
+.tcContainerImgAnimata {
+  position: relative;
+}
+.tcContainerImgAnimata .tcImgAnimata1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.tcContainerImgAnimata .tcImgAnimata2 {
+  position: absolute;
+  top: 45%;
+  right: 7%;
+}
+.tcContainerImgAnimata .tcImgAnimata3 {
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+}
+
+.tcImgAnimWidth {
+  scale: 0.01;
+}
+@media (max-width: 425.5px) {
+  .tcImgAnimWidth {
+    max-width: 140px;
+  }
 }
 
 .tcImgProgetti {

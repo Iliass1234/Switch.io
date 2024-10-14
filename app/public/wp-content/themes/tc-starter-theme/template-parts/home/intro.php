@@ -7,7 +7,7 @@
         <div class="row mt-5">
             <div class="col-md-7 pe-5 mb-4 mb-md-0">
                 <?php if (!empty($IntroTitolo)) : ?>
-                    <span class="d-block pe-5 h2"><?php echo $IntroTitolo ?></span>
+                    <span class="d-block ps-1 pe-5 h2"><?php echo $IntroTitolo ?></span>
                 <?php endif; ?>
             </div>
             <div class="col-md-5">

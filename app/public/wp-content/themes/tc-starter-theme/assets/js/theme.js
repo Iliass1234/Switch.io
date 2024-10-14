@@ -6306,6 +6306,7 @@ window.addEventListener('load', function () {
   aggiornaLinkAttivo();
 });
 function tcInitMenuAnimations() {
+  tcTamDescriptionAnimation();
   tcHandleOffcanvasHide();
   tcHandleOffcanvasShow();
   var mediaQuery = window.matchMedia('(min-width: 992px)');
@@ -6360,16 +6361,78 @@ function tcInitMenuAnimations() {
     });
   }
 }
+function tcTamDescriptionAnimation() {
+  var imgDescrizioneTeam = document.querySelectorAll('.tcImgAnimWidth');
+  var imgDescrizioneTeamEffect = document.querySelectorAll('.tcImgDescriptionEffect');
+  var offcanvasTL = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline({
+    repeat: -1
+  });
+  offcanvasTL.to(imgDescrizioneTeamEffect, {
+    scale: 0.01
+  });
+  offcanvasTL.to(imgDescrizioneTeam, {
+    scale: 0.01
+  });
+  offcanvasTL.to(imgDescrizioneTeam, {
+    scale: 1,
+    duration: 1,
+    stagger: {
+      each: 1.2,
+      from: "start"
+    }
+  });
+  offcanvasTL.to(imgDescrizioneTeamEffect, {
+    scale: 1.3,
+    duration: 1,
+    ease: "back.out(1.7)",
+    stagger: {
+      each: 1.2,
+      from: "start"
+    }
+  });
+  offcanvasTL.to({}, {
+    duration: 1.3
+  });
+  offcanvasTL.to(imgDescrizioneTeam, {
+    scale: 0.01,
+    duration: 0.5,
+    ease: "power1.in",
+    stagger: {
+      each: 0.5,
+      from: "end"
+    }
+  });
+  offcanvasTL.to({}, {
+    duration: 5
+  });
+}
+
+// <-------------------------------- SWIPER -------------------------------------------------------------------------->
+
 if (document.querySelector('.tcReviews__swiper') !== null) {
   var swiper = new Swiper(".tcReviews__swiper", {
     slidesPerView: 4,
     spaceBetween: 5,
     loop: true,
-    pagination: {}
+    pagination: {},
+    breakpoints: {
+      0: {
+        slidesPerView: 1.9,
+        spaceBetween: 10
+      },
+      426: {
+        slidesPerView: 3.1,
+        spaceBetween: 5
+      },
+      1024.5: {
+        slidesPerView: 4,
+        spaceBetween: 5
+      }
+    }
   });
 }
 
-// <-------------------------------- TITOLO / EXCERPT  CPT------------------------------>
+// <-------------------------------- TITOLO / EXCERPT  CPT------------------------------------------------------------>
 var imgCpt = document.querySelectorAll('.tcImgProgetti');
 var titleCpt = document.getElementById('tcCptTitle');
 var excerptCpt = document.getElementById('tcCptexerpt');
